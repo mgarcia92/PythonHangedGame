@@ -1,6 +1,6 @@
 import random
 
-class HangedGame:
+class HangmanGame:
    def __init__(self):
        self.list_words = []
        self.hidden_word = []
@@ -135,7 +135,7 @@ class HangedGame:
     return matched
 
 if __name__ == '__main__':
-    game = HangedGame()
+    game = HangmanGame()
     game.start_game()
 
 
