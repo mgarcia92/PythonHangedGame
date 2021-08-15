@@ -1,4 +1,5 @@
 import random
+import os
 
 class HangmanGame:
    def __init__(self):
@@ -90,6 +91,10 @@ class HangmanGame:
       print("File Not Found")
 
    def show_board(self,askLetter = True):
+       if(os.name == 'nt'):
+         os.system('cls')
+       else:
+         os.system('clear')        
        print(self.images[self.tries])
        print('')
        print(self.hidden_word)
